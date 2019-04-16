@@ -119,7 +119,7 @@ Output
 You are ready to remote debug with VSCode
  
 11.	Open Sample project, In the launch.json from customer project
- 
+ `
 {
 "name": "LEO .NET Core Remote Linux",
 "type": "coreclr",
@@ -155,7 +155,7 @@ You are ready to remote debug with VSCode
 ],
 "dependsOn": ["publish"]
 },
- 
+ `
 Make sure created folder by command: mkdir /home/ytthu/sample
  
 "C:\\Projects\\sample\\sample\\app\\bin\\Debug\\netcoreapp2.2\\publish\\*", is the published folder in windows path
@@ -191,7 +191,7 @@ dotnet new console -o leoConsumeApi
 
 3.	Generate debug asset files for both projects.
 4.	In leoApi project config task.json make sure the below task should be the same, leave the rest in default 
-
+`
 {
             "label": "publish",
             "command": "dotnet",
@@ -247,9 +247,9 @@ Launch.json add the remote debugger
             },
             "preLaunchTask": "deploy"
         }
-
+`
 Main method in program.cs
-
+`
 public static void Main(string[] args)
         {
             var host = new WebHostBuilder()
@@ -262,13 +262,13 @@ public static void Main(string[] args)
 
             //CreateWebHostBuilder(args).Build().Run();
         }
-
+`
 In leoApi.csproj add IISIntegration as below
-<ItemGroup>
+`<ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="2.2.0" />
-  </ItemGroup>
+  </ItemGroup>`
 
 In launchSettings.json in properties branch
  
@@ -278,7 +278,7 @@ Note the port
 5.	In project leoConsumeApi
 
 In launch.json file add below debugger
-
+`
 {
             "name": "Leo .NET Core Remote Linux",
             "type": "coreclr",
@@ -301,11 +301,11 @@ In launch.json file add below debugger
             },           
             "preLaunchTask": "deploy"
         }
-
+`
 In task.json
 
 Make sure modify the below tasks
-{
+`{
             "label": "publish",
             "command": "dotnet",
             "type": "process",
@@ -343,8 +343,7 @@ class Program
            Console.ReadLine();
         }
     }
-
-
+`
 6.	From project leoApi select Leo remote debugging and F5 to start debugging 
 The app url is http://localhost:5000
 Localhost now is meaning linux debug machine
