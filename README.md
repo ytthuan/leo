@@ -139,12 +139,12 @@ You are ready to remote debug with VSCode
 },
 "preLaunchTask": "deploy"
 }
+ `
  
- 
-12.	In task.json
+##12.	In task.json
  
 
-
+`
 {
 "label": "deploy",
 "command": "scp",
@@ -165,7 +165,7 @@ Make sure created folder by command: mkdir /home/ytthu/sample
 Then f5 and enjoy
  
 
-II.	Configure template projects to demonstrate remote debugging with HttpClient
+#II.	Configure template projects to demonstrate remote debugging with HttpClient
 
 Assumed to demonstrate the remote debug with remote linux, VS code C# .NET core, at the moment we try the simplest web service use HttpClient in System.Net library
 
@@ -177,20 +177,20 @@ Create two projects
 Simply to send a http GET request to leoApi web service to get data from. 
 
 
-1.	From Linux Create two dirs for publishing in linux
+##1.	From Linux Create two dirs for publishing in linux
 a.	Mkdir  /home/admin2019/leoconsumeapi
 b.	Mkdir /home/admin2019/leoapi
 NOTE: linux naming convention is case sensitive
 
-2.	From Windows or the environment hosting VS Code create two projects by command in VS Code terminal
+##2.	From Windows or the environment hosting VS Code create two projects by command in VS Code terminal
 
 #create web api template
 dotnet new webapi -o leoApi
 #create console app template
 dotnet new console -o leoConsumeApi
 
-3.	Generate debug asset files for both projects.
-4.	In leoApi project config task.json make sure the below task should be the same, leave the rest in default 
+##3.	Generate debug asset files for both projects.
+##4.	In leoApi project config task.json make sure the below task should be the same, leave the rest in default 
 `
 {
             "label": "publish",
@@ -215,10 +215,10 @@ dotnet new console -o leoConsumeApi
                 "publish"
             ]
         },
-
+`
 Launch.json add the remote debugger
 
-  {
+`  {
             "name": "Leo .NET Core Remote Linux",
             "type": "coreclr",
             "request": "launch",
@@ -246,10 +246,9 @@ Launch.json add the remote debugger
                 "/Views": "${workspaceFolder}/Views"
             },
             "preLaunchTask": "deploy"
-        }
-`
+        }`
 Main method in program.cs
-`
+
 public static void Main(string[] args)
         {
             var host = new WebHostBuilder()
@@ -258,7 +257,7 @@ public static void Main(string[] args)
                       .UseIISIntegration()
                       .UseContentRoot(Directory.GetCurrentDirectory())
                       .Build();
-            host.Run();
+           host.Run();
 
             //CreateWebHostBuilder(args).Build().Run();
         }
@@ -327,9 +326,9 @@ Make sure modify the below tasks
                 "publish"
             ]
         },
-
+ `
 Add the following code in main method program.cs
-
+`
 class Program
     {
         static HttpClient client = new HttpClient();
