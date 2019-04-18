@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitHub\\leo\\Project\\githubProject\\githubProject.csproj": {}
+    "c:\\GitHub\\leo\\Project\\githubProject\\githubProject.csproj": {}
   },
   "projects": {
-    "C:\\GitHub\\leo\\Project\\githubProject\\githubProject.csproj": {
+    "c:\\GitHub\\leo\\Project\\githubProject\\githubProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHub\\leo\\Project\\githubProject\\githubProject.csproj",
+        "projectUniqueName": "c:\\GitHub\\leo\\Project\\githubProject\\githubProject.csproj",
         "projectName": "githubProject",
-        "projectPath": "C:\\GitHub\\leo\\Project\\githubProject\\githubProject.csproj",
+        "projectPath": "c:\\GitHub\\leo\\Project\\githubProject\\githubProject.csproj",
         "packagesPath": "C:\\Users\\VMASUser\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHub\\leo\\Project\\githubProject\\obj\\",
+        "outputPath": "c:\\GitHub\\leo\\Project\\githubProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
