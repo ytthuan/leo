@@ -22,6 +22,7 @@ namespace githubProject
             Console.WriteLine("Press ENTER to unsubscribe...");
             Console.ReadLine();
             subscription.Dispose();
+            //1
         }
     }
 
