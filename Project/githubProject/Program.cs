@@ -5,7 +5,7 @@ using System.Reactive.Disposables;
 using System.Reactive.PlatformServices;
 using System.Reactive.Subjects;
 using static Newtonsoft.Json.JsonConvert;
-using NetMQ.ReactiveExtensions;
+
 
 namespace githubProject
 {
@@ -76,6 +76,7 @@ namespace githubProject
             Console.ReadLine();
         }
         //Returns TimeSelector    
+
         private static TimeSpan TimeSelector(int i)
         {
             return TimeSpan.FromSeconds(i);
