@@ -6,17 +6,11 @@ namespace leoRXSubscriber
     {
         static void Main(string[] args)
         {
-            // Application 1 (subscriber)
-            using (var subscriber1 = new SubscriberNetMq<int>("tcp://127.0.0.1:56001"))
+            var subscriber1 = new SubscriberNetMq<int>("tcp://127.0.0.1:56000");
+            subscriber1.Subscribe(message =>
             {
-                subscriber1.Subscribe(onNext: Console.WriteLine);
-            }
-
-            // // Application 2 (subscriber)
-            // using (var subscriber2 = new SubscriberNetMq<int>("tcp://127.0.0.1:56001"))
-            // {
-            //     subscriber2.Subscribe(Console.WriteLine);
-            // }
+                Console.WriteLine("I am subscriber and I received message from publisher: {0}",message); // Prints "42".
+            });   
 
             Console.ReadLine();
         }

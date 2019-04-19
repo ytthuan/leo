@@ -22,6 +22,34 @@
             "type": "coreclr",
             "request": "attach",
             "processId": "${command:pickProcess}"
+        },
+
+        {
+            "name": "Leo .NET Core Remote Linux",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "leoRXSubscriber.dll",
+            //1
+            "cwd": "/home/admin2019/sub/",
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "pipeTransport": {
+                "pipeCwd": "${workspaceFolder}",
+                //2
+                "pipeProgram": "C:\\mytools\\plink.exe",
+                //3
+                "pipeArgs": [
+                    "admin2019@linuxremotedebug.eastasia.cloudapp.azure.com",
+                    "-i",
+                    "C:\\Users\\admin2019\\.ssh\\puttysshconverted.ppk",
+                    "-batch",
+                    "-T"
+                ],
+                //4
+                "debuggerPath": "/home/ytthu/vsdbg/vsdbg"
+            },
+            "preLaunchTask": "deploy"
         }
+
     ]
 }
