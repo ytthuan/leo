@@ -1,0 +1,11 @@
+C:\Github\leo\leoRXPublisher\bin\Debug\netcoreapp2.2\leoRXPublisher.deps.json
+C:\Github\leo\leoRXPublisher\bin\Debug\netcoreapp2.2\leoRXPublisher.runtimeconfig.json
+C:\Github\leo\leoRXPublisher\bin\Debug\netcoreapp2.2\leoRXPublisher.runtimeconfig.dev.json
+c:\Github\leo\leoRXPublisher\bin\Debug\netcoreapp2.2\leoRXPublisher.dll
+c:\Github\leo\leoRXPublisher\bin\Debug\netcoreapp2.2\leoRXPublisher.pdb
+c:\Github\leo\leoRXPublisher\obj\Debug\netcoreapp2.2\leoRXPublisher.csprojAssemblyReference.cache
+c:\Github\leo\leoRXPublisher\obj\Debug\netcoreapp2.2\leoRXPublisher.csproj.CoreCompileInputs.cache
+c:\Github\leo\leoRXPublisher\obj\Debug\netcoreapp2.2\leoRXPublisher.AssemblyInfoInputs.cache
+c:\Github\leo\leoRXPublisher\obj\Debug\netcoreapp2.2\leoRXPublisher.AssemblyInfo.cs
+c:\Github\leo\leoRXPublisher\obj\Debug\netcoreapp2.2\leoRXPublisher.dll
+c:\Github\leo\leoRXPublisher\obj\Debug\netcoreapp2.2\leoRXPublisher.pdb

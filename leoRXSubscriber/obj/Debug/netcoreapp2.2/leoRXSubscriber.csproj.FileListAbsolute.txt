@@ -1,0 +1,11 @@
+C:\Github\leo\leoRXSubscriber\bin\Debug\netcoreapp2.2\leoRXSubscriber.deps.json
+C:\Github\leo\leoRXSubscriber\bin\Debug\netcoreapp2.2\leoRXSubscriber.runtimeconfig.json
+C:\Github\leo\leoRXSubscriber\bin\Debug\netcoreapp2.2\leoRXSubscriber.runtimeconfig.dev.json
+c:\Github\leo\leoRXSubscriber\bin\Debug\netcoreapp2.2\leoRXSubscriber.dll
+c:\Github\leo\leoRXSubscriber\bin\Debug\netcoreapp2.2\leoRXSubscriber.pdb
+c:\Github\leo\leoRXSubscriber\obj\Debug\netcoreapp2.2\leoRXSubscriber.csprojAssemblyReference.cache
+c:\Github\leo\leoRXSubscriber\obj\Debug\netcoreapp2.2\leoRXSubscriber.csproj.CoreCompileInputs.cache
+c:\Github\leo\leoRXSubscriber\obj\Debug\netcoreapp2.2\leoRXSubscriber.AssemblyInfoInputs.cache
+c:\Github\leo\leoRXSubscriber\obj\Debug\netcoreapp2.2\leoRXSubscriber.AssemblyInfo.cs
+c:\Github\leo\leoRXSubscriber\obj\Debug\netcoreapp2.2\leoRXSubscriber.dll
+c:\Github\leo\leoRXSubscriber\obj\Debug\netcoreapp2.2\leoRXSubscriber.pdb
