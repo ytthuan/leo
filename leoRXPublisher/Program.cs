@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using NetMQ.ReactiveExtensions;
 
 namespace leoRXPublisher
@@ -14,13 +15,15 @@ namespace leoRXPublisher
             // publisher.OnNext(48); // Sends 42.
             // Console.ReadLine();  
 
-            var publisher = new PublisherNetMq<string>("tcp://127.0.0.1:56000");
+            var publisher = new PublisherNetMq<string>(V);
             while (true)
             {
-                Console.WriteLine("enter the message to send via network");
-                string a = Console.ReadLine();
-
-                publisher.OnNext(a); // Sends 42.    
+                
+                Console.WriteLine("generate and sending message");     
+                string a = Guid.NewGuid().ToString();
+                publisher.OnNext(a);
+                Console.WriteLine(a);
+                Thread.Sleep(2000); // Sends 42.    
             }
         }
     }

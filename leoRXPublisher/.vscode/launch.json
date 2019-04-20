@@ -32,7 +32,7 @@
             //1
             "cwd": "/home/admin2019/pub/",
             "stopAtEntry": false,
-            "console": "integratedTerminal",
+            "console": "internalConsole",
             "pipeTransport": {
                 "pipeCwd": "${workspaceFolder}",
                 //2
