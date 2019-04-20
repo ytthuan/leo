@@ -26,6 +26,7 @@
             "command": "scp",
             "type": "shell",
             "args": [
+                "-r",
                 "${workspaceFolder}/bin/Debug/netcoreapp2.2/publish/*",
                 "admin2019@linuxremotedebug.eastasia.cloudapp.azure.com:/home/admin2019/pub"
             ],

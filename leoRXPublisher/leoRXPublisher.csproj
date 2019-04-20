@@ -6,7 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NetMQ.ReactiveExtensions" Version="0.9.3" />
+    
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NetMQ.ReactiveExtensions" Version="0.9.4-rc7" />
   </ItemGroup>
 
 </Project>
