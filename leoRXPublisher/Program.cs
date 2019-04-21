@@ -30,7 +30,6 @@ namespace leoRXPublisher
         }
 
 
-
         [ProtoContract]
         public class LeoTelemetryData
         {
