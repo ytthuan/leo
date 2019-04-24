@@ -12,9 +12,7 @@ namespace leoRXPublisher
 {
     class Program
     {
-        private static string connection1;
-        private static string connection2;
-        private static string connection3;
+        private static string connection1;        
 
 
         static void Main(string[] args)
@@ -40,9 +38,7 @@ namespace leoRXPublisher
             string path = env + "config/appsetting.json";
             var jobject = File.ReadAllText(path);
             var config = JsonConvert.DeserializeObject<Configuration>(jobject);
-            connection1 = config.Connections.connection1;
-            connection2 = config.Connections.connection2;
-            connection3 = config.Connections.connection3;
+            connection1 = config.Connections.connection1;            
         }
 
         static void RunPublisher1()
