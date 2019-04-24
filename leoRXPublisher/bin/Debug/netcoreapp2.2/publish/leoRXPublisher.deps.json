@@ -1,14 +1,15 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "077e04ac58222b60ffaf05ee79af57434bb5b552"
+    "signature": "96ec50448d1ae9a556a1d0a64ea377e88f55a315"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.2": {
       "leoRXPublisher/1.0.0": {
         "dependencies": {
-          "NetMQ.ReactiveExtensions": "0.9.4-rc7"
+          "NetMQ.ReactiveExtensions": "0.9.4-rc7",
+          "Newtonsoft.Json": "12.0.2"
         },
         "runtime": {
           "leoRXPublisher.dll": {}
@@ -77,6 +78,14 @@
           "lib/netstandard1.6/NetMQ.ReactiveExtensions.dll": {
             "assemblyVersion": "0.9.4.7",
             "fileVersion": "0.9.4.7"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.2.23222"
           }
         }
       },
@@ -1237,6 +1246,13 @@
       "sha512": "sha512-/aGyMquDnhvY9obmVrCqTEpjy13CHO9SfIjhVmMCBvLycvnWSQRFN52UCl1wG3pgNHUBi/fp7qqiRyC5p2/lnQ==",
       "path": "netmq.reactiveextensions/0.9.4-rc7",
       "hashPath": "netmq.reactiveextensions.0.9.4-rc7.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "path": "newtonsoft.json/12.0.2",
+      "hashPath": "newtonsoft.json.12.0.2.nupkg.sha512"
     },
     "protobuf-net/2.1.0": {
       "type": "package",

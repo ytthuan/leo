@@ -1,0 +1,7 @@
+{
+    "Connections": {
+        "connection1": "tcp://127.0.0.1:56000",
+        "connection2": "tcp://127.0.0.1:56001",
+        "connection3": "tcp://127.0.0.1:56003"
+    }
+}

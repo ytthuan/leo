@@ -31,9 +31,23 @@
                 "admin2019@linuxremotedebug.eastasia.cloudapp.azure.com:/home/admin2019/pub"
             ],
             "dependsOn": [
-                "publish"
+                "publish",
+                "deployConfig"
             ]
         },
+
+        {
+            "label": "deployConfig",
+            "command": "scp",
+            "type": "shell",
+            "args": [
+                "-r",
+                "${workspaceFolder}/config/*",
+                "admin2019@linuxremotedebug.eastasia.cloudapp.azure.com:/home/admin2019/pub/config/"
+            ]
+        },
+
+
         {
             "label": "watch",
             "command": "dotnet",
