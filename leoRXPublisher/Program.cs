@@ -12,15 +12,15 @@ namespace leoRXPublisher
 {
     class Program
     {
-        private static string connection1;        
+        private static string connection1;
 
 
         static void Main(string[] args)
         {
             InitSetting();
             StartMyThread(RunPublisher1).Start();
-           StartMyThread(RunPublisher2).Start();
-             StartMyThread(RunPublisher3).Start();
+            StartMyThread(RunPublisher2).Start();
+            StartMyThread(RunPublisher3).Start();
 
         }
 
@@ -38,7 +38,7 @@ namespace leoRXPublisher
             string path = env + "config/appsetting.json";
             var jobject = File.ReadAllText(path);
             var config = JsonConvert.DeserializeObject<Configuration>(jobject);
-            connection1 = config.Connections.connection1;            
+            connection1 = config.Connections.connection1;
         }
 
         static void RunPublisher1()
