@@ -88,6 +88,8 @@ namespace TodoApi.Controllers
         #endregion
 
         #region snippet_Delete
+
+        /// <summary>        /// Deletes a specific TodoItem Test Swagger Document by leo.        /// </summary>        /// <param name="id"></param>    
         [HttpDelete("{id}")]
         public IActionResult Delete(long id)
         {
