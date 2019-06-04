@@ -1,0 +1,11 @@
+c:\VSProject\leoConsumeApi\obj\Debug\netcoreapp2.2\leoConsumeApi.csprojAssemblyReference.cache
+c:\VSProject\leoConsumeApi\obj\Debug\netcoreapp2.2\leoConsumeApi.csproj.CoreCompileInputs.cache
+c:\VSProject\leoConsumeApi\obj\Debug\netcoreapp2.2\leoConsumeApi.AssemblyInfoInputs.cache
+c:\VSProject\leoConsumeApi\obj\Debug\netcoreapp2.2\leoConsumeApi.AssemblyInfo.cs
+C:\VSProject\leoConsumeApi\bin\Debug\netcoreapp2.2\leoConsumeApi.deps.json
+C:\VSProject\leoConsumeApi\bin\Debug\netcoreapp2.2\leoConsumeApi.runtimeconfig.json
+C:\VSProject\leoConsumeApi\bin\Debug\netcoreapp2.2\leoConsumeApi.runtimeconfig.dev.json
+c:\VSProject\leoConsumeApi\bin\Debug\netcoreapp2.2\leoConsumeApi.dll
+c:\VSProject\leoConsumeApi\bin\Debug\netcoreapp2.2\leoConsumeApi.pdb
+c:\VSProject\leoConsumeApi\obj\Debug\netcoreapp2.2\leoConsumeApi.dll
+c:\VSProject\leoConsumeApi\obj\Debug\netcoreapp2.2\leoConsumeApi.pdb

@@ -1,0 +1,49 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/leoConsumeApi.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/leoConsumeApi.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "deploy",
+            "command": "scp",
+            "type": "shell",
+            //1
+            "args": [
+                "${workspaceFolder}/bin/Debug/netcoreapp2.2/publish/*",
+                "admin2019@linuxremotedebug.eastasia.cloudapp.azure.com:/home/admin2019/leoconsumeapi"
+            ],
+            "dependsOn": [
+                "publish"
+            ]
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "${workspaceFolder}/leoConsumeApi.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        }
+    ]
+}

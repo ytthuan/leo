@@ -12,6 +12,7 @@ namespace leoRXSubscriber
     class Program
     {
         private static string connection1;        
+        private static string connection3;        
 
         static void Main(string[] args)
         {
@@ -38,6 +39,7 @@ namespace leoRXSubscriber
             var jobject = File.ReadAllText(path);
             var config = JsonConvert.DeserializeObject<Configuration>(jobject);
             connection1 = config.Connections.connection1;
+            connection3 = config.Connections.connection3;
           
         }
         static void RunSubscriber1()
@@ -64,7 +66,7 @@ namespace leoRXSubscriber
         }
         static void RunSubscriber3()
         {
-            var subscriber1 = new SubscriberNetMq<LeoHVAC3>(connection1);
+            var subscriber1 = new SubscriberNetMq<LeoHVAC3>(connection3);
             //try where            
             subscriber1.Where(x => x.DeviceId == "HVAC3").Subscribe(_message =>
                 {

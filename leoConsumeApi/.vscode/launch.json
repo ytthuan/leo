@@ -1,0 +1,54 @@
+{
+   // Use IntelliSense to find out which attributes exist for C# debugging
+   // Use hover for the description of the existing attributes
+   // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+   "version": "0.2.0",
+   "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/bin/Debug/netcoreapp2.2/leoConsumeApi.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            //For more information about the 'console' field, see https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md#console-terminal-window
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        },
+
+        {
+            "name": "Leo .NET Core Remote Linux",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "leoConsumeApi.dll",
+            //3
+            "cwd": "/home/admin2019/leoconsumeapi/",
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "pipeTransport": {
+                "pipeCwd": "${workspaceFolder}",
+                //1
+                "pipeProgram": "C:\\mytools\\plink.exe",
+                //2
+                "pipeArgs": [
+                    "admin2019@linuxremotedebug.eastasia.cloudapp.azure.com",
+                    "-i",
+                    "C:\\Users\\admin2019\\.ssh\\puttysshconverted.ppk",
+                    "-batch",
+                    "-T"
+                ],
+                //4
+                "debuggerPath": "/home/ytthu/vsdbg/vsdbg"
+            },           
+            "preLaunchTask": "deploy"
+        }
+    ]
+}
